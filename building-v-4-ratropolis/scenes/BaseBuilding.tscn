@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://c7knefsnm086t"]
+
+[ext_resource type="Script" uid="uid://bb4qa0rik0fas" path="res://scripts/BaseBuilding.gd" id="1_7mhcu"]
+
+[node name="BaseBuilding" type="Node2D" unique_id=1255708852]
+script = ExtResource("1_7mhcu")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1012819915]

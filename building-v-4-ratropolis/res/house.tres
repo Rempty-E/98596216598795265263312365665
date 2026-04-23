@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BuildingData" format=3 uid="uid://c2vsmdorylxkn"]
+
+[ext_resource type="Script" uid="uid://c8eu0xu7ixlfn" path="res://scripts/BuildingData.gd" id="1_8it7j"]
+[ext_resource type="Texture2D" uid="uid://djrb7255deumq" path="res://resources/buildings/house_small_yellow.png" id="2_s8a6v"]
+
+[resource]
+script = ExtResource("1_8it7j")
+name = "Дом"
+texture = ExtResource("2_s8a6v")
+resource_type = "population"
+metadata/_custom_type_script = "uid://c8eu0xu7ixlfn"
