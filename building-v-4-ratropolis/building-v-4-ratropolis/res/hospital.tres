@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BuildingData" format=3 uid="uid://dlysubbl47xik"]
+
+[ext_resource type="Script" uid="uid://c8eu0xu7ixlfn" path="res://scripts/BuildingData.gd" id="1_cnl04"]
+[ext_resource type="Texture2D" uid="uid://cyqeata6cp2lj" path="res://resources/buildings/mini_mart.png" id="2_fggu2"]
+
+[resource]
+script = ExtResource("1_cnl04")
+name = "Госпиталь"
+texture = ExtResource("2_fggu2")
+production_rate = 10.0
+resource_type = "population"
+resource_amount = 2
+width_in_cells = 4
+metadata/_custom_type_script = "uid://c8eu0xu7ixlfn"

@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://dxon764kbpeys"]
+
+[ext_resource type="Texture2D" uid="uid://b3sb70w3ewxlq" path="res://resources/icons/Golden Coin.png" id="1_15s5b"]
+[ext_resource type="Script" uid="uid://k74iim8enjek" path="res://scripts/ResourceUI.gd" id="1_encwc"]
+[ext_resource type="Texture2D" uid="uid://bfbhmtu575d46" path="res://resources/icons/Apple.png" id="2_pjhm5"]
+[ext_resource type="Texture2D" uid="uid://b0lju5s8cr7hq" path="res://resources/icons/population.png" id="3_encwc"]
+
+[node name="ResourceUI" type="CanvasLayer" unique_id=991961729]
+script = ExtResource("1_encwc")
+
+[node name="Background" type="Panel" parent="." unique_id=1337392027]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 51.0
+grow_horizontal = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Background" unique_id=670733023]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Gold" type="HBoxContainer" parent="Background/HBoxContainer" unique_id=42860256]
+layout_mode = 2
+
+[node name="Gold_icon" type="TextureRect" parent="Background/HBoxContainer/Gold" unique_id=1144386309]
+layout_mode = 2
+texture = ExtResource("1_15s5b")
+
+[node name="Gold_label" type="Label" parent="Background/HBoxContainer/Gold" unique_id=1347864292]
+layout_mode = 2
+text = "0"
+
+[node name="Food" type="HBoxContainer" parent="Background/HBoxContainer" unique_id=1199772899]
+layout_mode = 2
+
+[node name="Food_icon" type="TextureRect" parent="Background/HBoxContainer/Food" unique_id=972890090]
+layout_mode = 2
+texture = ExtResource("2_pjhm5")
+
+[node name="Food_label" type="Label" parent="Background/HBoxContainer/Food" unique_id=403595722]
+layout_mode = 2
+text = "0"
+
+[node name="Population" type="HBoxContainer" parent="Background/HBoxContainer" unique_id=2022485848]
+layout_mode = 2
+
+[node name="Population_icon" type="TextureRect" parent="Background/HBoxContainer/Population" unique_id=1433390891]
+layout_mode = 2
+texture = ExtResource("3_encwc")
+
+[node name="Population_label" type="Label" parent="Background/HBoxContainer/Population" unique_id=835243261]
+layout_mode = 2
+text = "0"

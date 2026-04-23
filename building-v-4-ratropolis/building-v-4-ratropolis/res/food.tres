@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BuildingData" format=3 uid="uid://dj5a76jjqyttn"]
+
+[ext_resource type="Script" uid="uid://c8eu0xu7ixlfn" path="res://scripts/BuildingData.gd" id="1_14322"]
+[ext_resource type="Texture2D" uid="uid://bfbq7ud0bm0ym" path="res://resources/buildings/pizzeria.png" id="2_bxm2t"]
+
+[resource]
+script = ExtResource("1_14322")
+name = "Пиццерия"
+texture = ExtResource("2_bxm2t")
+production_rate = 30.0
+resource_type = "food"
+resource_amount = 5
+width_in_cells = 2
+metadata/_custom_type_script = "uid://c8eu0xu7ixlfn"

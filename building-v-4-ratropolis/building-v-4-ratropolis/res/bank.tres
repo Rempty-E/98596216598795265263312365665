@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="BuildingData" format=3 uid="uid://bdsj8n5vnp4ro"]
+
+[ext_resource type="Script" uid="uid://c8eu0xu7ixlfn" path="res://scripts/BuildingData.gd" id="1_ahw2d"]
+[ext_resource type="Texture2D" uid="uid://cw842eu2glgny" path="res://resources/buildings/bank.png" id="2_14lav"]
+
+[resource]
+script = ExtResource("1_ahw2d")
+name = "Банк"
+texture = ExtResource("2_14lav")
+production_rate = 10.0
+resource_amount = 5
+metadata/_custom_type_script = "uid://c8eu0xu7ixlfn"
