@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://d8c7nhoa8ne3"]
+
+[ext_resource type="Texture2D" uid="uid://cs02aeqjjeg0v" path="res://resources/parallax_demon_woods_pack/layers/parallax-demon-woods-bg.png" id="1_o2hr4"]
+[ext_resource type="Texture2D" uid="uid://vns0c6jlf6ax" path="res://resources/parallax_demon_woods_pack/layers/parallax-demon-woods-far-trees.png" id="2_do75u"]
+[ext_resource type="Texture2D" uid="uid://bta1vwdrhrrg6" path="res://resources/parallax_demon_woods_pack/layers/parallax-demon-woods-mid-trees.png" id="3_yc1r3"]
+[ext_resource type="Texture2D" uid="uid://dxbxo63od07hy" path="res://resources/parallax_demon_woods_pack/layers/parallax-demon-woods-close-trees.png" id="4_c6scp"]
+
+[node name="Background 2" type="Node2D" unique_id=2023243543]
+
+[node name="l1" type="Parallax2D" parent="." unique_id=119828423]
+scroll_scale = Vector2(0.1, 0.1)
+repeat_size = Vector2(1280, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="l1" unique_id=1788896813]
+position = Vector2(0, 4.7683716e-07)
+scale = Vector2(2.6666667, 2.647059)
+texture = ExtResource("1_o2hr4")
+centered = false
+
+[node name="l2" type="Parallax2D" parent="." unique_id=1852603638]
+scroll_scale = Vector2(0.4, 0.4)
+repeat_size = Vector2(1280, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="l2" unique_id=1242352700]
+scale = Vector2(2.162162, 2.647059)
+texture = ExtResource("2_do75u")
+centered = false
+
+[node name="l3" type="Parallax2D" parent="." unique_id=868898015]
+scroll_scale = Vector2(0.8, 0.8)
+repeat_size = Vector2(1280, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="l3" unique_id=2119439809]
+scale = Vector2(2.162162, 2.6470587)
+texture = ExtResource("3_yc1r3")
+centered = false
+
+[node name="l4" type="Parallax2D" parent="." unique_id=1140656189]
+repeat_size = Vector2(1280, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="l4" unique_id=1389302367]
+scale = Vector2(2.162162, 2.647059)
+texture = ExtResource("4_c6scp")
+centered = false

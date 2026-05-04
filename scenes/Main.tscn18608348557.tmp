@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://c5trbhpl3yyie"]
+
+[ext_resource type="Script" uid="uid://boc1hy8utvnhu" path="res://scripts/Main.gd" id="1_rvslj"]
+[ext_resource type="PackedScene" uid="uid://b0q88moy0b480" path="res://scenes/Background_v2.tscn" id="2_0bbpv"]
+[ext_resource type="Texture2D" uid="uid://gx2k11opr6rq" path="res://resources/cells/gray_cell.png" id="2_nxtc6"]
+[ext_resource type="PackedScene" uid="uid://cpkfssxnbbluv" path="res://scenes/Background_v3.tscn" id="2_q8u5g"]
+[ext_resource type="PackedScene" uid="uid://dxon764kbpeys" path="res://scenes/ResourceUI.tscn" id="2_rvslj"]
+[ext_resource type="Texture2D" uid="uid://du774i13dlrin" path="res://resources/cells/green_cell.png" id="3_jlsqs"]
+[ext_resource type="Texture2D" uid="uid://p88nrr3nxsjo" path="res://resources/cells/red_cell.png" id="4_q8u5g"]
+[ext_resource type="Script" uid="uid://dv56anog68f0p" path="res://scripts/CameraController.gd" id="7_jlsqs"]
+[ext_resource type="Script" uid="uid://bu7njvb57h8dj" path="res://scripts/PlacementManager.gd" id="8_jlsqs"]
+[ext_resource type="Texture2D" uid="uid://5utvxrf74muf" path="res://terrain_snow_block_top.png" id="10_lhr70"]
+
+[node name="Main" type="Node2D" unique_id=1625577066]
+script = ExtResource("1_rvslj")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=220495665]
+position = Vector2(960, 540)
+script = ExtResource("7_jlsqs")
+
+[node name="Background" type="Node2D" parent="." unique_id=558364962]
+z_index = -1
+
+[node name="ParallaxBackground" parent="Background" unique_id=1023305155 instance=ExtResource("2_0bbpv")]
+visible = false
+
+[node name="Background 3" parent="Background" unique_id=1028123365 instance=ExtResource("2_q8u5g")]
+
+[node name="GameUI" parent="." unique_id=1410184466 instance=ExtResource("2_rvslj")]
+
+[node name="PlacementManager" type="Node2D" parent="." unique_id=1879351873]
+position = Vector2(944, 825)
+script = ExtResource("8_jlsqs")
+tex_cell_gray = ExtResource("2_nxtc6")
+tex_cell_green = ExtResource("3_jlsqs")
+tex_cell_red = ExtResource("4_q8u5g")
+
+[node name="Ground" type="Sprite2D" parent="." unique_id=512679794]
+texture_repeat = 2
+position = Vector2(759.50085, 1095.5)
+scale = Vector2(1.80045, 1.2421875)
+texture = ExtResource("10_lhr70")
+region_enabled = true
+region_rect = Rect2(0, 0, 20000, 128)
