@@ -10,6 +10,7 @@
 [ext_resource type="Script" uid="uid://dv56anog68f0p" path="res://scripts/CameraController.gd" id="7_jlsqs"]
 [ext_resource type="Script" uid="uid://bu7njvb57h8dj" path="res://scripts/PlacementManager.gd" id="8_jlsqs"]
 [ext_resource type="Texture2D" uid="uid://5utvxrf74muf" path="res://resources/terrain_snow_block_top.png" id="10_lhr70"]
+[ext_resource type="PackedScene" uid="uid://vexpddguk3sq" path="res://test.tscn" id="11_wp0k4"]
 
 [node name="Main" type="Node2D" unique_id=1625577066]
 script = ExtResource("1_rvslj")
@@ -29,6 +30,7 @@ visible = false
 [node name="GameUI" parent="." unique_id=1410184466 instance=ExtResource("2_rvslj")]
 
 [node name="Ground" type="Sprite2D" parent="." unique_id=512679794]
+visible = false
 texture_repeat = 2
 position = Vector2(760, 1095.5)
 scale = Vector2(1.80045, 1.2421875)
@@ -44,3 +46,6 @@ cell_height = 205
 tex_cell_gray = ExtResource("2_nxtc6")
 tex_cell_green = ExtResource("3_jlsqs")
 tex_cell_red = ExtResource("4_q8u5g")
+
+[node name="test" parent="." unique_id=1168659309 instance=ExtResource("11_wp0k4")]
+position = Vector2(3, 722)

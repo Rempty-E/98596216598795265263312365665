@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://boemtwn3mav5p"]
+
+[ext_resource type="Script" uid="uid://1csmmr4otime" path="res://building_manager.gd" id="1_vdbu3"]
+
+[node name="BuildingManager" type="Node2D" unique_id=501419961]
+script = ExtResource("1_vdbu3")
